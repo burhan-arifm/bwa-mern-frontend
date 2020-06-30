@@ -63,4 +63,4 @@ Button.propTypes = {
     isDisabled: propTypes.bool,
     isLoading: propTypes.bool,
     isExternal: propTypes.bool
-}
+};
