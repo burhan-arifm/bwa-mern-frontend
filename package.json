@@ -35,5 +35,6 @@
   },
   "devDependencies": {
     "node-sass": "^4.14.1"
-  }
+  },
+  "homepage": "https://burhan-arifm.github.io/bwa-mern-frontend/"
 }
