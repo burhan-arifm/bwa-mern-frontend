@@ -1,0 +1,70 @@
+.products {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: $border-radius*3.75;
+
+  .badge {
+    background-color: $wild-strawberry;
+    border-radius: 0 0 0 $border-radius*3.75;
+    color: $white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.25rem 1rem;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    z-index: 3;
+
+    span {
+      font-weight: 300;
+    }
+  }
+
+  .product-image {
+    display: block;
+    margin-bottom: 0;
+    position: absolute;
+    max-width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    z-index: -1;
+    transition: 500ms transform ease-in-out;
+  }
+
+  .product-name {
+    justify-content: flex-end;
+    background: linear-gradient(0deg, $gray-900 0%, transparent 40%);
+    color: $white;
+    display: flex;
+    flex-flow: column nowrap;
+    height: inherit;
+    padding: 0.75rem 1rem;
+    transition: 500ms transform ease-in-out;
+
+    .name {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+
+    .location {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+
+    .product-image {
+      transform: scale(1.1);
+      transition: 500ms transform ease-in-out;
+    }
+  
+    .product-name {
+      background: linear-gradient(0deg, $gray-900 0%, transparent 80%);
+      transition: 500ms transform ease-in-out;
+    }
+  }
+}

@@ -1,8 +1,7 @@
 import React from 'react';
 import Button from "./button";
-import "scss/iconText.scss"
 
-export default function iconText() {
+export default function IconText() {
   return (
     <div>
       <Button className="brand-text-icon" href="" type="link">
@@ -10,4 +9,4 @@ export default function iconText() {
       </Button>
     </div>
   );
-}
+};

@@ -1,12 +1,10 @@
-@import "./index.scss";
-
 header {
   border-bottom: 1px solid $gray-200;
   width: 100%;
   position: relative;
 
   .navbar {
-    height: 80px;
+    height: 5rem;
 
     .navbar-nav {
       li.nav-item {
@@ -17,7 +15,7 @@ header {
         }
         a {
           &.nav-link {
-            color: $blue-zodiac;
+            color: $secondary;
             padding-left: 1rem;
             padding-right: 1rem;
 
