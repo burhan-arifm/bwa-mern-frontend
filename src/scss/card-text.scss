@@ -12,7 +12,7 @@
     font-weight: 500;
     padding: 0.25rem 1rem;
     position: absolute;
-    right: 1px;
+    right: 0;
     top: 0;
     z-index: 3;
 
@@ -21,33 +21,33 @@
     }
   }
 
-  .product-image {
-    display: block;
-    margin-bottom: 0;
-    position: absolute;
-    max-width: 100%;
-    object-fit: contain;
-    overflow: hidden;
-    z-index: -1;
-    transition: 500ms transform ease-in-out;
+  figure {
+    position: relative;
+    max-height: 60%;
+    border-radius: inherit;
+
+    .product-image {
+      display: block;
+      max-width: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      border-radius: inherit;
+    }
   }
 
   .product-name {
-    justify-content: flex-end;
-    background: linear-gradient(0deg, $gray-900 0%, transparent 40%);
-    color: $white;
     display: flex;
     flex-flow: column nowrap;
-    height: inherit;
-    padding: 0.75rem 1rem;
-    transition: 500ms transform ease-in-out;
-
+    justify-content: flex-end;
+  
     .name {
+      color: $blue-zodiac;
       font-size: 1.25rem;
       font-weight: 400;
     }
 
     .location {
+      color: $gray-400;
       font-size: 1rem;
       font-weight: 300;
     }
@@ -55,16 +55,48 @@
 
   &:hover {
     text-decoration: none;
-    cursor: pointer;
+  }
 
+  &.most-picked {
     .product-image {
-      transform: scale(1.1);
+      object-fit: contain;
+      position: absolute;
+      z-index: -1;
       transition: 500ms transform ease-in-out;
+      margin: 0;
     }
   
     .product-name {
-      background: linear-gradient(0deg, $gray-900 0%, transparent 80%);
-      transition: 500ms transform ease-in-out;
+      background: linear-gradient(0deg, $gray-900 0%, transparent 40%);
+      color: $white;
+      height: inherit;
+      padding: 0.75rem 1rem;
+      transform:translateY(-1rem);
+      transition: 250ms transform ease-in-out;
+  
+      .name {
+        color: inherit;
+      }
+  
+      .location {
+        color: inherit;
+      }
+    }
+  
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+  
+      .product-image {
+        transform: scale(1.1);
+        transition: 250ms transform ease-in-out;
+      }
+    
+      .product-name {
+        background: linear-gradient(0deg, $gray-900 0%, transparent 80%);
+        transition: 250ms transform ease-in-out;
+      }
     }
   }
+
 }

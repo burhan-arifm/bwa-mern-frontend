@@ -5,10 +5,10 @@ import IconCities from "images/ic_cities.svg";
 import IconTreasure from "images/ic_treasure.svg";
 import ImageHero from "images/img-hero.jpg";
 
-export default function Hero(props) {
+export default function Hero({ data, reference }) {
   function showMostPicked() {
     window.scrollTo({
-      top: props.reference.current.offsetTop - 30,
+      top: reference.current.offsetTop - 30,
       behavior: "smooth"
     });
   }
@@ -34,21 +34,21 @@ export default function Hero(props) {
           </Button>
           <div className="counter row">
             <div className="col-auto">
-              <img width="36" height="36" src={IconTraveler} alt={`${props.data.travelers} Travelers`}/>
+              <img width="36" height="36" src={IconTraveler} alt={`${data.travelers} Travelers`}/>
               <h6 className="mt-2">
-                {numberFormat(props.data.travelers)} <span className="text-gray-500 font-weight-light">Travelers</span>
+                {numberFormat(data.travelers)} <span className="text-gray-500 font-weight-light">Travelers</span>
               </h6>
             </div>
             <div className="col-auto">
-              <img width="36" height="36" src={IconTreasure} alt={`${props.data.treasures} Treasures`}/>
+              <img width="36" height="36" src={IconTreasure} alt={`${data.treasures} Treasures`}/>
               <h6 className="mt-2">
-                {numberFormat(props.data.treasures)} <span className="text-gray-500 font-weight-light">Treasures</span>
+                {numberFormat(data.treasures)} <span className="text-gray-500 font-weight-light">Treasures</span>
               </h6>
             </div>
             <div className="col-auto">
-              <img width="36" height="36" src={IconCities} alt={`${props.data.cities} Cities`}/>
+              <img width="36" height="36" src={IconCities} alt={`${data.cities} Cities`}/>
               <h6 className="mt-2">
-                {numberFormat(props.data.cities)} <span className="text-gray-500 font-weight-light">Cities</span>
+                {numberFormat(data.cities)} <span className="text-gray-500 font-weight-light">Cities</span>
               </h6>
             </div>
           </div>

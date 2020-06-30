@@ -2,9 +2,9 @@ import React from 'react';
 import Button from "components/button";
 import BrandIcon from "components/iconText";
 
-export default function Header(props) {
+export default function Header({ location }) {
   const getNavLinkClass = path => {
-    return props.location.pathname === path ? " active" : ""; 
+    return location.pathname === path ? " active" : ""; 
   };
 
   return (

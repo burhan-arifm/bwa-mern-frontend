@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import CardText from "components/card-text";
 
-it('should render card', () => {
+it('should render card.', () => {
   const {container} = render(
     <Router>
       <CardText data=""></CardText>
@@ -15,13 +15,14 @@ it('should render card', () => {
   expect(container.querySelector('div.product-name')).toBeInTheDocument();
 });
 
-test("should show badge when it's special", () => {
-  const {container} = render(
+it("should show badge with text 'Popular Choice' when it's popular.", () => {
+  const {container, getByText} = render(
     <Router>
-      <CardText data=""></CardText>
+      <CardText data="" isPopular={ true }></CardText>
     </Router>
   );
 
   expect(container.querySelector('div.badge')).toBeInTheDocument();
+  expect(getByText(/Popular/i)).toBeInTheDocument();
 });
 
