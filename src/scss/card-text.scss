@@ -74,11 +74,7 @@
       transform:translateY(-1rem);
       transition: 250ms transform ease-in-out;
   
-      .name {
-        color: inherit;
-      }
-  
-      .location {
+      .name, .location {
         color: inherit;
       }
     }

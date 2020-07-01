@@ -20,8 +20,8 @@ export default function Hero({ data, reference }) {
   }
 
   return (
-    <section className="container pt-4">
-      <div className="row align-items-center">
+    <section className="container">
+      <div className="row align-items-center justify-content-center">
         <div id="hero-texts" className="col-6 pr-5">
           <h1 className="font-weight-bold text-blue-zodiac mb-2 text-blue-zodiac">
             Forget Busy Work,<br/>Start Next Vacation

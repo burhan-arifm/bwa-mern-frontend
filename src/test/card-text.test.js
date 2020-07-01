@@ -15,10 +15,23 @@ it('should render card.', () => {
   expect(container.querySelector('div.product-name')).toBeInTheDocument();
 });
 
+it("should show badge with starting price when it's most picked.", () => {
+  const data = { "price": "80", "unit": "night" };
+  const {container, getByText} = render(
+    <Router>
+      <CardText data={ data } mostPicked ></CardText>
+    </Router>
+  );
+
+  expect(container.querySelector('div.badge')).toBeInTheDocument();
+  expect(getByText(/per night/i)).toBeInTheDocument();
+})
+
+
 it("should show badge with text 'Popular Choice' when it's popular.", () => {
   const {container, getByText} = render(
     <Router>
-      <CardText data="" isPopular={ true }></CardText>
+      <CardText data="" isPopular></CardText>
     </Router>
   );
 
