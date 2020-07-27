@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Button from "./button";
 
 export default function IconText() {
@@ -9,4 +9,4 @@ export default function IconText() {
       </Button>
     </div>
   );
-};
+}
