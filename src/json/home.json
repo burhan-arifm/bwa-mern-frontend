@@ -1,8 +1,8 @@
 {
   "hero": {
-    "travelers": 80409,
-    "treasures": 882,
-    "cities": 1492
+    "travelers": "80409",
+    "treasures": "882",
+    "cities": "1492"
   },
   "mostPicked": [
     {

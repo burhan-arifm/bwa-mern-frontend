@@ -4,6 +4,7 @@ import IconTraveler from "images/ic_traveler.svg";
 import IconCities from "images/ic_cities.svg";
 import IconTreasure from "images/ic_treasure.svg";
 import ImageHero from "images/img-hero.jpg";
+import IconCounter from "components/icon-with-counter";
 
 export default function Hero({ data, reference }) {
   function showMostPicked() {
@@ -11,12 +12,6 @@ export default function Hero({ data, reference }) {
       top: reference.current.offsetTop - 30,
       behavior: "smooth"
     });
-  }
-
-  function numberFormat(number) {
-    const formatNumbering = new Intl.NumberFormat("id-ID");
-
-    return formatNumbering.format(number);
   }
 
   return (
@@ -33,24 +28,9 @@ export default function Hero({ data, reference }) {
             Show Me Now
           </Button>
           <div className="counter row">
-            <div className="col-auto">
-              <img width="36" height="36" src={IconTraveler} alt={`${data.travelers} Travelers`}/>
-              <h6 className="mt-2">
-                {numberFormat(data.travelers)} <span className="text-gray-500 font-weight-light">Travelers</span>
-              </h6>
-            </div>
-            <div className="col-auto">
-              <img width="36" height="36" src={IconTreasure} alt={`${data.treasures} Treasures`}/>
-              <h6 className="mt-2">
-                {numberFormat(data.treasures)} <span className="text-gray-500 font-weight-light">Treasures</span>
-              </h6>
-            </div>
-            <div className="col-auto">
-              <img width="36" height="36" src={IconCities} alt={`${data.cities} Cities`}/>
-              <h6 className="mt-2">
-                {numberFormat(data.cities)} <span className="text-gray-500 font-weight-light">Cities</span>
-              </h6>
-            </div>
+            <IconCounter icon={ IconTraveler } iconName="Travelers" count={ data.travelers } size={ 36 } />
+            <IconCounter icon={ IconTreasure } iconName="Treasures" count={ data.treasures } size={ 36 } />
+            <IconCounter icon={ IconCities } iconName="Cities" count={ data.cities } size={ 36 } />
           </div>
         </div>
         <div id="hero-banner" className="col-6 pl-5">
