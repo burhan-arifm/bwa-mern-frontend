@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import Button from "components/button";
-import BrandIcon from "components/iconText";
+import BrandIcon from "components/icon-text";
 
 export default function Header({ location }) {
-  const getNavLinkClass = path => {
-    return location.pathname === path ? " active" : ""; 
+  const getNavLinkClass = (path) => {
+    return location.pathname === path ? " active" : "";
   };
 
   return (
@@ -40,4 +40,4 @@ export default function Header({ location }) {
       </div>
     </header>
   );
-};
+}

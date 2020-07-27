@@ -1,0 +1,14 @@
+.description {
+	p {
+		text-align: justify;
+		font-weight: 300;
+		color: $gray-500;
+	}
+	.features {
+		margin-top: 1.875rem;
+
+		.feature-item {
+			margin-bottom: 1.25rem;
+		}
+	}
+}

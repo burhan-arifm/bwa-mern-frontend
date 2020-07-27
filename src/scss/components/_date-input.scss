@@ -1,0 +1,47 @@
+@import "../../../node_modules/react-date-range/dist/styles";
+@import "../../../node_modules/react-date-range/dist/theme/default";
+
+.input-date {
+	.input-group {
+		background-color: $white;
+
+		.input-group-text {
+			pointer-events: none;
+			border: 0;
+			cursor: pointer;
+			padding: 0;
+			border-radius: $border-radius !important;
+			width: 2.8125rem;
+			height: 2.8125rem;
+			display: flex;
+			justify-content: center;
+			background-color: $blue-zodiac;
+			position: absolute;
+			z-index: 999;
+		}
+
+		.form-control {
+			border: 0;
+			border-radius: 0;
+			outline: 0;
+			box-shadow: none;
+			background-color: $gray-100;
+			padding: 0.575rem 2.8125rem;
+			text-align: center;
+			justify-content: center;
+			width: 100%;
+			height: 2.8125rem;
+			user-select: none;
+		}
+
+		.date-range-wrapper {
+			padding: 0.25rem;
+			background-color: $white;
+			box-shadow: 0 0 1.25rem rgba($black, 0.1);
+			position: absolute;
+			border-radius: 0.25rem;
+			top: 2.8125rem;
+			z-index: 5;
+		}
+	}
+}
