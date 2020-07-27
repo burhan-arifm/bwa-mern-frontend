@@ -1,0 +1,12 @@
+.breadcrumb {
+	background-color: transparent;
+}
+.breadcrumb-item {
+	a {
+		color: $gray-500;
+	}
+
+	&.active {
+		color: $blue-zodiac;
+	}
+}
