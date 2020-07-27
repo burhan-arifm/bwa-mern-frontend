@@ -76,7 +76,8 @@ export default class DetailBookingForm extends Component {
 
   render() {
     const { data } = this.state;
-    const { itemDetails, startBook } = this.props;
+    // const { itemDetails, startBook } = this.props;
+    const { itemDetails } = this.props;
 
     return (
       <div className="card booking-form">
