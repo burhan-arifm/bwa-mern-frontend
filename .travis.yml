@@ -4,6 +4,7 @@ addons:
   apt:
     update: true
 cache: yarn
+install: yarn install
 script: npm test
 jobs:
   include:
