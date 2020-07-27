@@ -1,16 +1,23 @@
+dist: bionic
 language: node_js
-node_js:
-  - "stable"
-cache:
-  directories:
-  - node_modules
-script:
-  - npm test
-  - npm run build
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $github_token
-  local_dir: build
-  on:
-    branch: master
+addons:
+  apt:
+    update: true
+cache: yarn
+script: npm test
+jobs:
+  include:
+    - node_js: "12"
+    - node_js: "13"
+    - node_js: "14"
+    - node_js: "lts/*"
+    - node_js: "stable"
+      script:
+        - npm test
+        - npm run build
+      deploy:
+        provider: pages
+        github_token: $github_token
+        local_dir: build
+        on:
+          branch: master
