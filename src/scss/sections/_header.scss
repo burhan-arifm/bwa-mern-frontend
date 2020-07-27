@@ -1,0 +1,30 @@
+header {
+	border-bottom: 1px solid $gray-200;
+	width: 100%;
+	position: relative;
+
+	.navbar {
+		height: 5rem;
+
+		.navbar-nav {
+			li.nav-item {
+				&.active {
+					a.nav-link {
+						color: $primary;
+					}
+				}
+				a {
+					&.nav-link {
+						color: $secondary;
+						padding-left: 1rem;
+						padding-right: 1rem;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+}
