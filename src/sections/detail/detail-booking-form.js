@@ -90,7 +90,7 @@ export default class DetailBookingForm extends Component {
         <label htmlFor="duration">How long will you stay?</label>
         <NumberInput
           max={30}
-          suffix={itemDetails.unit}
+          suffix={` ${itemDetails.unit}`}
           isSuffixPlural
           onChange={this.updateData}
           name="duration"

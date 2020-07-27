@@ -58,7 +58,7 @@ export default function NumberInput(props) {
           name={name}
           readOnly
           placeholder={placeholder ? placeholder : "0"}
-          value={`${prefix}${value} ${suffix}${
+          value={`${prefix}${value}${suffix}${
             isSuffixPlural && value > 1 ? "s" : ""
           }`}
           onChange={onChange}
