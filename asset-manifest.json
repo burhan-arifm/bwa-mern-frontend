@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/bwa-mern-frontend/static/css/main.c17db8e9.chunk.css",
+    "main.js": "/bwa-mern-frontend/static/js/main.5d2a2016.chunk.js",
+    "main.js.map": "/bwa-mern-frontend/static/js/main.5d2a2016.chunk.js.map",
+    "runtime-main.js": "/bwa-mern-frontend/static/js/runtime-main.c57fd42c.js",
+    "runtime-main.js.map": "/bwa-mern-frontend/static/js/runtime-main.c57fd42c.js.map",
+    "static/js/2.bbde6ab8.chunk.js": "/bwa-mern-frontend/static/js/2.bbde6ab8.chunk.js",
+    "static/js/2.bbde6ab8.chunk.js.map": "/bwa-mern-frontend/static/js/2.bbde6ab8.chunk.js.map",
+    "index.html": "/bwa-mern-frontend/index.html",
+    "precache-manifest.c7ffaeaaff8d4c015d64ab73ad8d8bbf.js": "/bwa-mern-frontend/precache-manifest.c7ffaeaaff8d4c015d64ab73ad8d8bbf.js",
+    "service-worker.js": "/bwa-mern-frontend/service-worker.js",
+    "static/css/main.c17db8e9.chunk.css.map": "/bwa-mern-frontend/static/css/main.c17db8e9.chunk.css.map",
+    "static/js/2.bbde6ab8.chunk.js.LICENSE.txt": "/bwa-mern-frontend/static/js/2.bbde6ab8.chunk.js.LICENSE.txt",
+    "static/media/ic_cities.svg": "/bwa-mern-frontend/static/media/ic_cities.bc95ea70.svg",
+    "static/media/ic_traveler.svg": "/bwa-mern-frontend/static/media/ic_traveler.109e18e8.svg",
+    "static/media/ic_treasure.svg": "/bwa-mern-frontend/static/media/ic_treasure.bb259d86.svg",
+    "static/media/img-hero.jpg": "/bwa-mern-frontend/static/media/img-hero.c21ecd2e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c57fd42c.js",
+    "static/js/2.bbde6ab8.chunk.js",
+    "static/css/main.c17db8e9.chunk.css",
+    "static/js/main.5d2a2016.chunk.js"
+  ]
+}
